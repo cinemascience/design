@@ -34,11 +34,11 @@ CISimage,CISLayer,CISChannel,FILE
 
 ## Example with some data explicit 
 
-|CISID.1.0|CISOrigin|CISImage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelType|FILE|
-|"0"|UL|512|512|"0"|pressure|float|cis0000.npz|
-|-|-|-|-|-|-|-|-|-|-|-|-|
+|CISID.1.0|CISImage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
+|-|-|-|-|-|-|-|
+|"0"|"0"|512|512|"0"|pressure|cis0000.npz|
 
 ```
-CISID.1.0,CISOrigin,CISImage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,CISChannelType,FILE
-"0",UL,512,512,"0",pressure,float,cis0000.npz
+CISID.1.0,CISImage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
+"0","0",512,512,"0",pressure,cis0000.npz
 ```
