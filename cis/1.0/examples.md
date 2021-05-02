@@ -21,7 +21,7 @@
 |CISChannelType     | |string|Type of data in the channel. One of string, int, float|
 
 ## Simplest example
-The simplest example is a single image with a single layer and a single channel. All other values are set to default by any application that reads this data.
+The simplest example is a single image set with a single layer and a single channel. All other values are set to default by any application that reads this data.
 
 |CISID.1.0|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
 |-|-|-|-|-|-|-|
@@ -32,6 +32,18 @@ CISID.1.0,CISimage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
 "0","0",512,512,"0",pressure,cis0000.npz
 ```
 
+Adding an additional image looks like this:
+|CISID.1.0|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
+|-|-|-|-|-|-|-|
+|"0"|"0"|512|512|"0"|pressure|cis0000.npz|
+|"0"|"1"|512|512|"0"|pressure|cis0000.npz|
+
+```
+CISID.1.0,CISimage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
+"0","0",512,512,"0",pressure,cis0000.npz
+"0","1",512,512,"0",pressure,cis0000.npz
+```
+
 ## Simplest example with additional metadata
 The above example can include any number of columns of additional metadata, per the Cinema database specification. For example, including time and camera metadata could look like this. The example includes images across several time and camera positions:
 
@@ -39,8 +51,8 @@ The above example can include any number of columns of additional metadata, per 
 |-|-|-|-|-|-|-|-|-|-|
 |0.0|0.0|0.0|"0"|"0"|512|512|"0"|pressure|cis0000.npz|
 |1.0|1.0|0.0|"0"|"0"|512|512|"0"|pressure|cis0001.npz|
-|0.0|0.0|1.0|"0"|"0"|512|512|"0"|pressure|cis0002.npz|
-|1.0|1.0|1.0|"0"|"0"|512|512|"0"|pressure|cis0003.npz|
+|0.0|0.0|1.0|"0"|"1"|512|512|"0"|pressure|cis0002.npz|
+|1.0|1.0|1.0|"0"|"1"|512|512|"0"|pressure|cis0003.npz|
 
 ```
 CISID.1.0,CISimage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
