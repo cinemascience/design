@@ -2,23 +2,24 @@
 
 The following are reserved keywords that implement the CIS extension metadata:
 
-|Keyword| Required | Type | Definition |
+|Keyword| Required | Type | Default | Definition |
 |-|-|-|-|
-|CISID              |X|string|ID of the image, and version number of the CIS spec|
-|CISIDVariable      | |string|key, value set of metadata about a variable|
-|CISOrigin          | |string|One of "UL, UR, LL, LR". Default is UL|
-|CISImage           |X|string|ID of the image. Any unique string on the path CISID|
-|CISImageFlags      | |string|List of image flags|
-|CISImageWidth      |X|int   |Integer, number of pixels in width|
-|CISImageHeight     |X|int   |Integer, number of pixels in height|
-|CISLayer           |X|string|ID of the layer. Any unique string on the path CISID/CISImage| 
-|CISLayerOffsetX    | |int   |Integer, number of pixels to offset layer origin|
-|CISLayerOffsetY    | |int   |Integer, number of pixels to offset layer origin|
-|CISLayerWidth      | |int   |Integer, number of pixels in width|
-|CISLayerHeight     | |int   |Integer, number of pixels in height|
-|CISChannel         |X|string|ID of the channel. Any unique string on the path CISID/CISImage/CISLayer| 
-|CISChannelVariable | |string|Variable for the channel, if different from the Channel ID|
-|CISChannelType     | |string|Type of data in the channel. One of string, int, float|
+|CISImage           |X|string|N/A|ID of the image. Any unique string on the path CISID|
+|CISOrigin          | |string|UL |One of "UL, UR, LL, LR"|
+|CISVersion         |X|string|N/A|version number of the CIS extension specification|
+|CISImageFlags      | |string|Null|List of image flags|
+|CISImageWidth      |X|int   |N/A|Integer, number of pixels in width|
+|CISImageHeight     |X|int   |N/A|Integer, number of pixels in height|
+|CISLayer           |X|string|N/A|ID of the layer. Any unique string on the path CISID/CISImage| 
+|CISLayerOffsetX    | |int   |0|Integer, number of pixels to offset layer origin|
+|CISLayerOffsetY    | |int   |0|Integer, number of pixels to offset layer origin|
+|CISLayerWidth      | |int   |CISImageWidth|Integer, number of pixels in width|
+|CISLayerHeight     | |int   |CISImadeHeight|Integer, number of pixels in height|
+|CISChannel         |X|string|N/A|ID of the channel. Any unique string on the path CISID/CISImage/CISLayer| 
+|CISChannelVar      | |string|N/A|Variable for the channel, if different from the Channel ID|
+|CISChannelVarMin   | |string|Derived from channel|Channel variable global min|
+|CISChannelVarMax   | |string|Derived from channel|Channel variable global max|
+|CISChannelType     | |string|float|Type of data in the channel. One of string, int, float|
 
 
 ### CISImageFlags
