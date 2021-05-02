@@ -4,12 +4,18 @@
 |----|----|
 | Date    | 1 May 2019 |
 | Version | 1.0 |
-| Type    | COMPOSABLE_IMAGE_SET |
 | Authors | David H. Rogers, John Patchet, Ethan Stam, Dave DeMarle, Sebastian Jourdain, Jonas Lucasczyk |
 
-## Status of this document
+## Extension to the Cinema Database Specification
 
-This is a specification for the Cinema Image Set format.
+This document details an extension to the Cinema Database Specification that defines a Cinema Image Set (CIS). A Cinema Image Set includes two extensions to the Cinema database specification: 
+
+1. [A set of column keywords](keyword.md) that consumers can look for, if they understand the CIS extension
+2. A file per image/layer/channel instance. Currently, only Python-readable `.npz` files are supported. 
+
+CIS data is stored as a set of files, in compliance with the Cinema Database Specification. All channel files shall be stored in a Python-decodable `.npz` format. Other storage formats for channel files are not currently part of the specification. 
+
+[A set of examples](examples/examples.md) show several ways of writing this information in the Cinema Database Format.
 
 ## Introduction
 
@@ -80,13 +86,3 @@ A **colormap** is data used to map a value to a color. A colormap:
     - may be included in the Cinema database, or 
     - may be and external reference (URL) to a colormap definition
 
-## Extension to the Cinema Database Specification
-
-A CIS is an extension of the Cinema database specification, and it includes two additional sets of data:
-
-1. [A set of column keywords](keyword.md) that consumers can look for, if they understand the CIS extension
-2. A file per image/layer/channel instance. Currently, only Python-readable `.npz` files are supported. 
-
-CIS data is stored as a set of files, in compliance with the Cinema Database Specification. All channel files shall be stored in a Python-decodable `.npz` format. Other storage formats for channel files are not currently part of the specification. 
-
-[A set of examples](examples/examples.md) show several ways of writing this information in the Cinema Database Format.
