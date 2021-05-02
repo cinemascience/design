@@ -20,3 +20,9 @@ The following are reserved keywords that implement the CIS extension metadata:
 |CISChannelVariable | |string|Variable for the channel, if different from the Channel ID|
 |CISChannelType     | |string|Type of data in the channel. One of string, int, float|
 
+
+### CISImageFlags
+
+- IMAGES_INDEPENDENT images DO NOT have the same set of layers and channels. 
+    Default, if this flag is not included, is that all images 
+    have the same layers, and all layers have the same channels.

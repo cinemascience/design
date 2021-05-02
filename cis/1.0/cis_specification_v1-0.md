@@ -15,7 +15,7 @@ This document details an extension to the Cinema Database Specification that def
 
 CIS data is stored as a set of files, in compliance with the Cinema Database Specification. All channel files shall be stored in a Python-decodable `.npz` format. Other storage formats for channel files are not currently part of the specification. 
 
-[A set of examples](examples.md) show several ways of writing this information in the Cinema Database Format.
+[A set of examples](examples/examples.md) show several ways of writing this information in the Cinema Database Format.
 
 ## Introduction
 
