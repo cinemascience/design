@@ -17,7 +17,7 @@
 |CISLayerWidth      | |Integer, number of pixels in width|
 |CISLayerHeight     | |Integer, number of pixels in height|
 |CISChannel         |X|ID of the channel. Any unique string on the path CISID/CISImage/CISChannel| 
-|CISChannelVariable |X|Variable for the channel|
+|CISChannelVariable | |Variable for the channel, if different from the Channel ID|
 |CISChannelType     | |ID of the image, and version number of the CIS spec|
 
 ## Simplest example
@@ -32,13 +32,13 @@ CISimage,CISLayer,CISChannel,FILE
 0,0,0,pressure,cis0000.npz
 ```
 
-## All data explicit for a simple layer
+## Example with some data explicit 
 
-|CISID|CISOrigin|CISimage|CISImageFlags|CISImageWidth|CISImageHeight|CISLayer|CISLayerOffsetX|CISLayerOffsetY|CISChannel|CISChannelType|FILE|
+|CISID.1.0|CISOrigin|CISImage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelType|FILE|
+|"0"|UL|512|512|"0"|pressure|float|cis0000.npz|
 |-|-|-|-|-|-|-|-|-|-|-|-|
-|0|0|UL|IMAGES_INDEPENDENT|512|512|0|0|0|pressure|float|cis0000.npz|
 
 ```
-CISID,CISOrigin,CISimage,CISImageFlags|CISImageWidth,CISImageHeight,CISLayer,CISLayerOriginX,CISLayerOriginY,CISChannel,CISChannelType,FILE
-0,0,UL,IMAGES_INDEPENDENT,512,512,0,0,0,pressure,float,cis0000.npz
+CISID.1.0,CISOrigin,CISImage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,CISChannelType,FILE
+"0",UL,512,512,"0",pressure,float,cis0000.npz
 ```
