@@ -1,6 +1,6 @@
 # Composable Image Set format specification
 
-This repository includes specification, documenation and examples for the Cinema **composable image set** data type.
+This repository includes specification, documenation and examples for an **UNRELEASED** Cinema **composable image set** data type. It is included in this repsitory for historcal purposes only.
 
 ## Overview
 
