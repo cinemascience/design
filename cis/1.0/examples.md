@@ -1,25 +1,5 @@
 # Examples
 
-## CIS column keywords
-
-|Keyword| Required | Type | Definition |
-|-|-|-|-|
-|CISID              |X|string|ID of the image, and version number of the CIS spec|
-|CISIDVariable      | |string|key, value set of metadata about a variable|
-|CISOrigin          | |string|One of "UL, UR, LL, LR". Default is UL|
-|CISImage           |X|string|ID of the image. Any unique string on the path CISID|
-|CISImageFlags      | |string|List of image flags|
-|CISImageWidth      |X|int   |Integer, number of pixels in width|
-|CISImageHeight     |X|int   |Integer, number of pixels in height|
-|CISLayer           |X|string|ID of the layer. Any unique string on the path CISID/CISImage| 
-|CISLayerOffsetX    | |int   |Integer, number of pixels to offset layer origin|
-|CISLayerOffsetY    | |int   |Integer, number of pixels to offset layer origin|
-|CISLayerWidth      | |int   |Integer, number of pixels in width|
-|CISLayerHeight     | |int   |Integer, number of pixels in height|
-|CISChannel         |X|string|ID of the channel. Any unique string on the path CISID/CISImage/CISLayer| 
-|CISChannelVariable | |string|Variable for the channel, if different from the Channel ID|
-|CISChannelType     | |string|Type of data in the channel. One of string, int, float|
-
 ## Simplest example
 The simplest example is a single image set with a single layer and a single channel. All other values are set to default by any application that reads this data.
 
