@@ -4,7 +4,7 @@
 The simplest example is a single image with a single layer and a single channel. All other values are set to default by any application that reads this data.
 
 |phi|theta|CISimage|CISlayer|CISchannel|FILE|
-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|
 |0|0|0|pressure|cis0000.npz|
 
 ```
