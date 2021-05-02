@@ -33,9 +33,9 @@ CISID.1.0,CISimage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
 ```
 
 ## Simplest example with additional metadata
-The above example can include any number of columns of additional metadata, per the Cinema database specification. For example, including timestep and camera metadata could look like this. The example includes images across several timesteps and camera positions:
+The above example can include any number of columns of additional metadata, per the Cinema database specification. For example, including time and camera metadata could look like this. The example includes images across several time and camera positions:
 
-|phi|theta|timestep|CISID.1.0|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
+|phi|theta|time|CISID.1.0|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
 |-|-|-|-|-|-|-|-|-|-|
 |0.0|0.0|0.0|"0"|"0"|512|512|"0"|pressure|cis0000.npz|
 |1.0|1.0|0.0|"0"|"0"|512|512|"0"|pressure|cis0001.npz|
