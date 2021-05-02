@@ -5,11 +5,11 @@ The simplest example is a single image with a single layer and a single channel.
 
 |CISimage|CISlayer|CISchannel|FILE|
 |-|-|-|-|
-|0|pressure|cis0000.npz|
+|0|0|pressure|cis0000.npz|
 
 ```
 CISimage,CISlayer,CISchannel,FILE
-0,0,pressure,cis0000.npz
+0,0,0,pressure,cis0000.npz
 ```
 
 ## All data explicit for a simple layer
