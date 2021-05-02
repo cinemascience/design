@@ -1,5 +1,25 @@
 # Examples
 
+## CIS column keywords
+
+|Keyword| Required | Definition |
+|-|-|-|
+|CISID              |X|ID of the image, and version number of the CIS spec|
+|CISIDVariable      | |key, value set of metadata about a variable|
+|CISOrigin          | |One of "UL, UR, LL, LR". Default is UL|
+|CISImage           |X|ID of the image. Any unique string on the path CISID/CISImage|
+|CISImageFlags      | |List of image flags|
+|CISImageWidth      |X|Integer, number of pixels in width|
+|CISImageHeight     |X|Integer, number of pixels in height|
+|CISLayer           |X|ID of the layer. Any unique string on the path CISIS/CISImage| 
+|CISLayerOffsetX    | |Integer, number of pixels to offset layer origin|
+|CISLayerOffsetY    | |Integer, number of pixels to offset layer origin|
+|CISLayerWidth      | |Integer, number of pixels in width|
+|CISLayerHeight     | |Integer, number of pixels in height|
+|CISChannel         |X|ID of the channel. Any unique string on the path CISID/CISImage/CISChannel| 
+|CISChannelVariable |X|Variable for the channel|
+|CISChannelType     | |ID of the image, and version number of the CIS spec|
+
 ## Simplest example
 The simplest example is a single image with a single layer and a single channel. All other values are set to default by any application that reads this data.
 
@@ -14,7 +34,7 @@ CISimage,CISLayer,CISChannel,FILE
 
 ## All data explicit for a simple layer
 
-|CISID|CISOrigin|CISimage|CISImageFlags|CISImageWidth|CISImageHeight|CISLayer|CISLayerOriginX|CISLayerOriginY|CISChannel|CISChannelType|FILE|
+|CISID|CISOrigin|CISimage|CISImageFlags|CISImageWidth|CISImageHeight|CISLayer|CISLayerOffsetX|CISLayerOffsetY|CISChannel|CISChannelType|FILE|
 |-|-|-|-|-|-|-|-|-|-|-|-|
 |0|0|UL|IMAGES_INDEPENDENT|512|512|0|0|0|pressure|float|cis0000.npz|
 
