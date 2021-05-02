@@ -3,7 +3,7 @@
 ## CIS column keywords
 
 |Keyword| Required | Type | Definition |
-|-|-|-|
+|-|-|-|-|
 |CISID              |X|string|ID of the image, and version number of the CIS spec|
 |CISIDVariable      | |string|key, value set of metadata about a variable|
 |CISOrigin          | |string|One of "UL, UR, LL, LR". Default is UL|
