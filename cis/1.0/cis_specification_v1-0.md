@@ -1,37 +1,36 @@
-# Composable Image Set format specification
+# Composable Image Set specification
 
 |    |    |
 |----|----|
 | Date    | 1 May 2019 |
 | Version | 1.0 |
 | Type    | COMPOSABLE_IMAGE_SET |
-| Extension | `.cis` |
 | Authors | David H. Rogers, John Patchet, Ethan Stam, Dave DeMarle, Sebastian Jourdain, Jonas Lucasczyk |
 
 ## Status of this document
 
-This is a draft specification for the `.cis` format, and is under review by the Cinema team and collaborators.
+This is a specification for the Cinema Image Set format.
 
 ## Introduction
 
-Cinema is a way to create, manage and view elements from analysis workflows. One element that can be created is an explorable image, which the user can interact with. In practice, interactivity is achieved through the `.cis` data specification and a **viewer** which provides controls for the elements of the `.cis` data. The viewer can implement controls that allow elements to be turned on and off,and recolored, as well as controls for parameters such as viewing angle, time, and others. More detailed explanation of these interactive images created can be found in <sup>[1]</sup>, and online examples are [here](https://www.cinemaviewer.org).
+Cinema is a way to create, manage and view elements from analysis workflows. One element that can be created is an explorable image, which the user can interact with. In practice, interactivity is achieved through the CIS data specification and a **viewer** which provides controls for the elements of the CIS data. The viewer can implement controls that allow elements to be turned on and off,and recolored, as well as controls for parameters such as viewing angle, time, and others. More detailed explanation of these interactive images created can be found in <sup>[1]</sup>, and online examples are [here](https://www.cinemaviewer.org).
 
 This specification allows the **producer** of the image to encode a range of information, though there are no constraints on what a **consumer** of the image must do with it. The range of information goes from:
 
 1. Minimal information. This is the minimal information needed to construct an image. All consumers of the images are expected to behave reasonably when minimal information is provided. 
 2. Maximum information. This allows a consumer to (optionally) display the finished image in the exact state that the producer expects it to be in. This allows a direct comparison between the producer's image and the consumer's.
 
-## The `.cis` format 
+## The Cinema Image Set (CIS) Specification 
 
-A `.cis` database is a logical collection of related images.
+A CIS database is a logical collection of related images.
 
-A single `.cis` image is the result of coloring and compositing a set of elements together. The results of the coloring and compositing steps are dependent upon the information contained in the `.cis` file, choices by the user, and the capabilities of the **consumer** application.
+A single CIS image is the result of coloring and compositing a set of elements together. The results of the coloring and compositing steps are dependent upon the information contained in the CIS file, choices by the user, and the capabilities of the **consumer** application.
 
 <table>
 <tr>
 <td><img src="img/composite.png"></img></td>
 <tr>
-<td>Diagram of layers and possible composited images. Layers can be combined together in many ways, depending upon the information that is included in the .cis file, as well as the capabilities of the consumer of the data.</td>
+<td>Diagram of layers and possible composited images. Layers can be combined together in many ways, depending upon the information that is included, as well as the capabilities of the consumer of the data.</td>
 </tr>
 </table>
 
@@ -78,7 +77,7 @@ A **colormap** is data used to map a value to a color. A colormap:
 
 1. Has a unique name.
 2. The definition of the colormap:
-    - may be included in the `.cis` file, or
+    - may be included in the Cinema database, or 
     - may be and external reference (URL) to a colormap definition
 
 ## Storage
