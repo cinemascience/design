@@ -21,7 +21,7 @@ We note:
 /
   class COMPOSABLE_IMAGE_SET
   dims [1024, 768]
-  version 1.0
+  version 0.5
   parametertable/
     col_names "time,phi,theta,isoval,isovar,cis:path"
     num_cols 6
@@ -84,7 +84,7 @@ In this example, we do not encode the Cinema `.csv` file in the `.cis` file. Thi
 /
   class COMPOSABLE_IMAGE_SET
   dims [1024, 768]
-  version 1.0
+  version 0.5
   image/
     0000/
       layers/

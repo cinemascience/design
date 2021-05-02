@@ -3,7 +3,7 @@
 |    |    |
 |----|----|
 | Date    | 27 Feb 2020 |
-| Version | 1.0 |
+| Version | 0.5 |
 | Type    | COMPOSABLE_IMAGE_SET |
 | Storage | FILES | 
 | Extension | `.cis` |
@@ -23,7 +23,7 @@ cisdata.cis/
             "classname"   : "COMPOSABLE_IMAGE_SET",
             "dims"        : [1024, 768],
             "flags"       : ["IMAGES_INDEPENDENT"],
-            "version"     : "1.0",
+            "version"     : "0.5",
             "origin"      : "UL" 
         }
     parametertable/ (directory, optional)

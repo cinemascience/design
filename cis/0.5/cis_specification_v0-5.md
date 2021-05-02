@@ -3,7 +3,7 @@
 |    |    |
 |----|----|
 | Date    | 10 Dec 2019 |
-| Version | 1.0 |
+| Version | 0.5 |
 | Type    | COMPOSABLE_IMAGE_SET |
 | Extension | `.cis` |
 | Authors | David H. Rogers, John Patchet, Ethan Stam, Dave DeMarle, Sebastian Jourdain, Jonas Lucasczyk |
@@ -86,7 +86,7 @@ A **colormap** is data used to map a value to a color. A colormap:
 A `composable image set` may be stored in any of several formats.
 
 - A set of files on disk:
-    - [v1.0 file storage specification](storage_file.md) 
+    - [v0.5 file storage specification](storage_file.md) 
 - A single [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) file. 
-    - [v1.0 HDF5 storage specification](storage_hdf5.md) 
+    - [v0.5 HDF5 storage specification](storage_hdf5.md) 
 
