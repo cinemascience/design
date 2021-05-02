@@ -3,7 +3,7 @@
 The following are reserved keywords that implement the CIS extension metadata:
 
 |Keyword| Required | Type | Default | Definition |
-|-|-|-|-|
+|-|-|-|-|-|
 |CISImage           |X|string|N/A|ID of the image. Any unique string on the path CISID|
 |CISOrigin          | |string|UL |One of "UL, UR, LL, LR"|
 |CISVersion         |X|string|N/A|version number of the CIS extension specification|
