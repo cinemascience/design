@@ -14,11 +14,11 @@ CISimage,CISlayer,CISchannel,FILE
 
 ## All data explicit for a simple layer
 
-|CISID|CISimage|CISimageSize|CISlayer|CISchannel|FILE|
-|-|-|-|-|-|-|
-|0|0|0|0|pressure|cis0000.npz|
+|CISID|CISimage|CISImageWidth|CISImageHeight|CISlayer|CISLayerOriginX|CISLayerOriginY|CISchannel|CISchannelType|FILE|
+|-|-|-|-|-|-|-|-|-|-|
+|0|0|512|512|0|0|0|pressure|float|cis0000.npz|
 
 ```
-CISID,CISimage,CISImageWidth,CISImageHeight,CISlayer,CISLayerOrigin,CISLayerOriginX,CISLayerOriginY,CISchannel,CISchannelType,FILE
-0,0,512,512,pressure,float,cis0000.npz
+CISID,CISimage,CISImageWidth,CISImageHeight,CISlayer,CISLayerOriginX,CISLayerOriginY,CISchannel,CISchannelType,FILE
+0,0,512,512,0,0,0,pressure,float,cis0000.npz
 ```
