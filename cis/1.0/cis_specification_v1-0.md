@@ -82,7 +82,7 @@ A **colormap** is data used to map a value to a color. A colormap:
 
 ## Storage
 
-A `composable image set` may be stored in any of several formats.
+CIS data is stored as a set of files, in compliance with the Cinema Database Specification. All channel files shall be stored in a Python-decodable `.npz` format. Other storage formats for channel files are not currently part of the specification. 
 
 - A set of files on disk:
     - [v1.0 file storage specification](storage_file.md) 
