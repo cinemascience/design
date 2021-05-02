@@ -23,22 +23,23 @@
 ## Simplest example
 The simplest example is a single image with a single layer and a single channel. All other values are set to default by any application that reads this data.
 
-|CISimage|CISLayer|CISChannel|FILE|
-|-|-|-|-|
-|0|0|pressure|cis0000.npz|
-
-```
-CISimage,CISLayer,CISChannel,FILE
-0,0,0,pressure,cis0000.npz
-```
-
-## Example with some data explicit 
-
-|CISID.1.0|CISImage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
-|-|-|-|-|-|-|-|
+|CISID.1.0|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|FILE|
+|-|-|-|-|-|-|-|-|
 |"0"|"0"|512|512|"0"|pressure|cis0000.npz|
 
 ```
-CISID.1.0,CISImage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
+CISID.1.0,CISimage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,FILE
 "0","0",512,512,"0",pressure,cis0000.npz
+```
+
+## Example with some data explicit 
+This example provides values for the `CISImageWidth`, and `CISImageHeight` values.
+
+|CISID.1.0|CISImage|CISImageOrigin|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelType|FILE|
+|-|-|-|-|-|-|-|-|
+|"0"|"0"|UL|512|512|"0"|pressure|float|cis0000.npz|
+
+```
+CISID.1.0,CISImage,CISImageWidth,CISImageHeight,CISLayer,CISChannel,CISChanne,FlILE
+"0","0",UL,512,512,"0",pressure,float,cis0000.npz
 ```
