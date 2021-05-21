@@ -15,11 +15,12 @@ The following are reserved keywords that implement the CIS extension metadata:
 |CISLayerOffsetY    | |int   |0|Integer, number of pixels to offset layer origin|
 |CISLayerWidth      | |int   |CISImageWidth|Integer, number of pixels in width|
 |CISLayerHeight     | |int   |CISImadeHeight|Integer, number of pixels in height|
-|CISChannel         |X|string|N/A|ID of the channel. Any unique string on the path CISID/CISImage/CISLayer| 
+|CISChannel         |X|string|N/A|ID of the channel. Any unique string on the path CISID/CISImage/CISLayer, with the exception of the reserved keywords (CISShadow, CISDepth)| 
 |CISChannelVar      | |string|N/A|Variable for the channel, if different from the Channel ID|
+|CISChannelVarType  | |string|N/A|Variable type for the channel. One of: string, int, float| 
 |CISChannelVarMin   | |string|Derived from channel|Channel variable global min|
 |CISChannelVarMax   | |string|Derived from channel|Channel variable global max|
-|CISChannelType     | |string|float|Type of data in the channel. One of string, int, float|
+|CISChannelType     | |string|float|Type of data in the channel. One of: string, int, float|
 
 
 ### CISImageFlags
