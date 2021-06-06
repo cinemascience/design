@@ -4,7 +4,7 @@
 |----|----|
 | Date    | 1 May 2019 |
 | Version | 1.0 |
-| Authors | David H. Rogers, John Patchet, Ethan Stam, Dave DeMarle, Sebastian Jourdain, Jonas Lucasczyk |
+| Authors | David H. Rogers, John Patchet, Ethan Stam, Dave DeMarle, Sebastian Jourdain, Jonas Lukasczyk |
 
 ## Extension to the Cinema Database Specification
 
