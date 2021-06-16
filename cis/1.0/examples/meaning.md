@@ -9,7 +9,7 @@ table shows two images, where an image is defined by `time, phi, theta` tuples. 
 of these three parameters change, we would expect a new image.
 
 |time|phi|theta|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelVar|CISChannelType|FILE|
-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|
 |0.0|0.0|0.0|0|512|512|0|||depth|cis0000.npz|
 |0.0|0.0|0.0|0|512|512|0|pressure|float|pressure|cis0001.npz|
 |0.0|0.0|0.0|0|512|512|0|temperature|float|temperature|cis0002.npz|
@@ -30,7 +30,7 @@ these three datasets have the same content:
 ### Case 1: All channels have data
 
 |time|phi|theta|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelVar|CISChannelType|FILE|
-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|
 |0.0|0.0|0.0|0|512|512|0|||depth|cis0000.npz|
 |0.0|0.0|0.0|0|512|512|0|pressure|float|pressure|cis0001.npz|
 |0.0|0.0|0.0|0|512|512|0|temperature|float|temperature|cis0002.npz|
@@ -41,7 +41,7 @@ these three datasets have the same content:
 ### Case 2: Some channels have no files
 
 |time|phi|theta|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelVar|CISChannelType|FILE|
-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|
 |0.0|0.0|0.0|0|512|512|0|||depth|cis0000.npz|
 |0.0|0.0|0.0|0|512|512|0|pressure|float|pressure|cis0001.npz|
 |0.0|0.0|0.0|0|512|512|0|temperature|float|temperature||
@@ -55,7 +55,7 @@ In this case, `layer 1` has no `pressure` values. In practice this means that if
 we would see a 512x512 blank image.
 
 |time|phi|theta|CISimage|CISImageWidth|CISImageHeight|CISLayer|CISChannel|CISChannelVar|CISChannelType|FILE|
-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|
 |0.0|0.0|0.0|0|512|512|0|||depth|cis0000.npz|
 |0.0|0.0|0.0|0|512|512|0|pressure|float|pressure|cis0001.npz|
 |0.0|0.0|0.0|0|512|512|0|temperature|float|temperature|cis0002.npz|
